@@ -1,0 +1,575 @@
+/* global style resets */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	outline-style: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Tahoma, sans-serif;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+body {
+	font: 12px/1.8 Arial, sans-serif;  /* shortcut for font-size and font-family */
+	color: #76623c;
+	background-color: #524b31;
+	position: relative;
+}
+
+button {
+	cursor: pointer;
+}
+
+/* end global resets */
+
+#wrapper {
+	margin: 0 auto;      /* horizontally center our content */
+	text-align: center;  /* this is for older IE versions */
+	width: 960px;        /* account for browser chrome --- 1024x768 */
+}
+
+
+#loginForm_wrap {
+	/*background: #524b31 url(../images/bGrounds/topBground4.jpg) repeat-y 50% 0%;*/
+	background: #524b31 url(../images/bGrounds/topBground5.jpg) repeat-y 50% 0%;
+	         /*   color      background image  tile in y-axis  50% center and 0% top */
+}
+
+
+/* Client Login form */
+
+#loginForm {
+	width: 900px;
+	/* top and bottom = 0px, right and left = auto => browser calculates margin */
+	margin: 0 auto;
+	/* position this div relative to normal flow; i.e., relative to where it 
+	   would normally be in normal flow. (eg left: 20px; would add 20 pixels
+	   to this element's current LEFT position */
+	position: relative;
+	padding-bottom: 24px;
+}
+
+
+#loginForm form {
+	padding: 10px 0;  /* top and bottom = 8px, right and left = 0px */
+}
+
+#loginForm h3 {
+	color: #dbdddf;
+	font-weight: normal;
+	text-align: left;
+}
+
+#loginForm p {
+	font: 24px Tahoma;
+	/*color: #f0b783; */
+	color: #ffffcc;
+	margin-bottom: 10px;
+}
+
+
+#loginForm input {
+	border: 2px solid #4c535d;
+	padding: 5px 3px;
+	color: #4c535d;
+	background: #dbdddf;
+	font-size: 15px;
+	width: 165px;
+	margin-right: 10px;
+	float: left;
+}
+
+
+#loginForm  input.goButton {
+	/* border: 0 none;
+	background: none;*/
+	border: 1px solid #4c535d;
+	color: #5d4c5b;
+	background: #bec3ca;
+	width: auto;
+}
+
+
+#loginForm #newsletter_login {
+	/* absolutely position this element within its parent element
+	   (the #loginForm div) by setting its top and right properties */
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-left: 1px dotted #dbdddf;
+	padding-left: 2.4em;
+}
+
+
+/* Client login tab */
+
+#loginTab {
+	height: 3px;
+	position: relative;
+	bottom: 0;
+	z-index: 2; /* had to make this at least 2 for it to treat btn as link */
+	/*background: #524b31 url(../images/bGrounds/topBground.png) no-repeat 50% 0%;*/
+}
+
+
+#loginTab p {
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+#loginTab a {
+	float: left;
+	margin-top: 5px;
+	display: block;
+}
+
+
+#loginTab a#loginHook {
+	position: absolute;
+	top: -2px;
+	left: 8px;
+	background: url(../images/loginButton.png) no-repeat;
+	width: 80px;
+	height: 19px;
+	text-indent: -9999px;
+	margin-left: 10px;
+}
+
+
+
+#top {
+	background: #463003 url(../images/bGrounds/logo_backGround.jpg) no-repeat 50% 0%;
+	width: 960px;  /* same as parent's width (div#wrapper) */
+	height: 205px;
+	position: relative;
+}
+
+/* move this image to the right edge of its parent container */
+#logoPic {
+	float: right;
+}
+
+#logo1870 {
+	width: 273px;
+	height: 113px;
+	position: absolute;
+	top: 86px;
+	right: 69px;
+}
+
+/* select diary image */
+#diary {
+	position: absolute;
+	top: -18px;
+	left: 0px;
+	z-index: 1;
+}
+
+#twoColWrapper {
+	/*background-color: green;
+	border: pink 4px ridge;*/
+	width: 960px;
+}
+
+/* set up this container for the Journal image in the left column
+   relatively positioned within its parent div@twoColWrapper */
+#secondaryContainer {
+	background: #463003 url(../images/bGrounds/secondary_backGround.jpg) no-repeat 50% 0%;
+	float: left;   /* float to left edge of parent element (tag) */
+	width: 285px;
+	height: 495px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+/* select the journal image */
+#journal {
+	position: absolute;
+	top: 64px;  /* top edge of journal  is 84px down from parent div top edge */
+	left: 14px; /* left edge of journal is 14px to right of parent div left edge */
+}
+
+#whoAmI {
+	position: absolute;
+	bottom: 10px;
+	left: 42px;
+	opacity: .4;
+	cursor: pointer;
+}
+
+#whoAmIText {
+	position: absolute;
+	bottom: 20px;
+	left: 108px;
+	font-family: 'Rock Salt', 'MedievalSharp', Arial, sans-serif;
+	font-size: 1.2em;
+	text-shadow: 1px 1px 0px #fff;
+	opacity: .4;
+	/*display: none;*/
+}
+
+#mysteryPanel {
+	position: absolute;
+	top: 70px;
+	left: 0px;
+	display: none;
+	background: #5f5b4c;
+	border:1px solid #888;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-family: 'MedievalSharp', Arial, sans-serif;
+	font-size: 1.1em;
+	/*text-shadow: 1px 1px 0px #111;*/
+	width: 305px;
+	height: 290px;
+	text-align: left;
+	padding: 20px 10px 20px 6px;
+	filter: alpha(opacity=95);
+	opacity: .95;
+	z-index: 4;
+}
+
+#silhouetteImage {
+	position: relative;
+	width: 130px;
+	height: 160px;
+	float: left;
+	background-color: #413d2f;
+	margin-right: 8px;
+	border-top:1px solid #888;
+	border-left:1px solid #888;
+	border-right:1px solid #222;
+	border-bottom:1px solid #222;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	opacity: .95;
+}
+
+#silhouetteImage img#silhouette {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: .9;
+}
+
+#silhouetteImage img#revealed {
+	position: absolute;
+	top: 2px;
+	left: 0px;
+	display: none;
+}
+
+#mysteryPanel p {
+	color: #ddd;
+}
+
+#mysteryPanel h3 {
+	color: #ccc;
+	font-family: 'Nosifer Caps', Arial, sans-serif;
+	font-size: 0.9em;
+	line-height: 2.0em;
+	text-align: center;
+	text-shadow: -1px 1px 4px #111;
+	cursor: pointer;
+}
+
+#mysteryPanel h3:hover {
+	color: #ddd;
+	text-shadow: -2px 1px 4px #111;
+}
+
+/* select the <div> whose id attribute is set to a value of "contentWrapper" */
+
+/*
+Set up right column (main content area) 
+*/
+div#contentWrapper {
+	background: #463003 url(../images/bGrounds/primary_backGround.jpg) no-repeat;
+	position: relative;
+	width: 675px;
+	height: 495px;
+	float: right;
+	z-index: 2;  /* we need to get on top of diary image so its right-bottom doesn't cover our first two links */
+}
+
+/* select the unordered list of links */
+ul#nav {
+	position: relative;
+	width: 675px;
+	top: 28px;
+	left: 50px;
+}
+
+/* select all <li>'s inside the ul#nav */
+ul#nav li {
+	float: left;
+	margin-left: 39px;
+	cursor: pointer;
+}
+
+ul#nav li#first {
+	margin-left: 0px;
+}
+
+
+ul#nav li a {
+	display: block;  /* display each link as a block rather than an inline element*/
+	/* hide the link text by sliding them way off to the left of the page */
+	text-indent: -9999px;
+}
+
+
+/* For each of our ul#nav links set up a background image (since we just
+   moved the text of each of these links offscreen...) */
+   
+a#theWar {
+	background: url(../images/navLinks/nav01.png) no-repeat left top;
+	height: 30px;
+	width: 76px;
+}
+
+a#theDepot {
+	background: url(../images/navLinks/nav02.png) no-repeat left top;
+	height: 30px;
+	width: 81px;
+}
+
+a#gaming1870 {
+	background: url(../images/navLinks/nav03.png) no-repeat left top;
+	height: 30px;
+	width: 118px;
+}
+
+a#theArt {
+	background: url(../images/navLinks/nav04.png) no-repeat left top;
+	height: 30px;
+	width: 64px;
+}
+
+a#theLibrary {
+	background: url(../images/navLinks/nav05.png) no-repeat left top;
+	height: 30px;
+	width: 66px;
+}
+
+/* Now, when the user mouses over any of our links, reposition the
+   link's background image to slide up so the link image shows
+   the text and a bayonet
+   
+   These images are known as sprites or CSS sprites as we adjust
+   the position of the image based on user action or status of the element */
+   
+a:hover#theWar {
+	background: url(../images/navLinks/nav01.png) no-repeat left -30px;
+	height: 30px;
+	width: 76px;
+}
+
+a:hover#theDepot {
+	background: url(../images/navLinks/nav02.png) no-repeat left -30px;
+	height: 30px;
+	width: 81px;
+}
+
+a:hover#gaming1870 {
+	background: url(../images/navLinks/nav03.png) no-repeat left -30px;
+	height: 30px;
+	width: 118px;
+}
+
+a:hover#theArt {
+	background: url(../images/navLinks/nav04.png) no-repeat left -30px;
+	height: 30px;
+	width: 64px;
+}
+
+a:hover#theLibrary {
+	background: url(../images/navLinks/nav05.png) no-repeat left -30px;
+	height: 30px;
+	width: 66px;
+}
+
+div#primaryContainer {
+	position: relative;
+	clear: left;     /* start content of this div below previous element */
+	text-align: left;
+	top: 22px;
+	left: 40px;
+	/*border: 2px dotted #ff0000;*/
+}
+
+/* This div has our polaroid image as well as some text */
+div#navDesc {
+	background: url(../images/tornPaper02.png) no-repeat;
+	/* same as
+	background-image: url(../images/tornPaper02.png);
+	background-repeat: no-repeat; */
+	
+	z-index: 3;
+	height: 170px;
+	width: 675px;
+}
+
+
+img.navPolaroid {
+	position: absolute;
+	top: -16px;
+	left: 375px;
+}
+
+/* this is the text in the #navDesc div */
+.tabDesc {
+	position: absolute;
+	top: 15px;
+	left: 5px;
+	width: 320px;
+	padding: 10px;
+	opacity: 0.9;
+	display: none;
+}
+
+#defaultTab {
+	display: block;
+}
+
+/* select all <h3>'s that are descendants of (inside of) elements that
+   have a class value of tabDesc */
+.tabDesc h3 {
+	margin: 0 auto;
+	text-align: center;
+}
+
+div#primaryContent {
+	position: relative;
+	width: 600px;
+	height: 220px;
+	margin-top: 20px;
+	/*border-top: 1px dotted #0000ff;*/
+}
+
+div#primaryPic {
+	float: left;   /* align the image in this div to the left edge of its parent*/
+	width: 133px;
+	height: 220px;
+}
+
+div#primaryPic img#pic {
+	position: absolute;
+	top: -10px;
+	left: 0px;
+	/*border-top: 1px solid #ff0000;*/
+}
+
+div#primaryPic div#imageTabs {
+	position: absolute;
+	top: 10px;
+	left: -25px;
+}
+
+div#motd {
+	float: left;  /* align as much left as we can and cause following content to 
+	                 flow to the right of this element */
+	margin-top: 5px;
+	padding-left: 20px;
+	width: 200px;
+	border-top: 1px dotted #76623c;
+	border-left: 1px dotted;
+	font-family: Tahoma, "Trebuchet MS", sans-serif;
+	font-size: 13px;
+	font-weight: 900;
+	line-height: 1.0em;
+}
+
+div#motd h4 {
+	margin: 0px auto;    /* center this element */
+	text-align: center;  /* center in older versions of IE */
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: 600;
+	line-height: 2.0em;
+}
+
+div#quoteToday {
+	float: left;  /* align as much left as we can and cause following content to 
+	                 flow to the right of this element */
+	margin-top: 5px;
+	margin-left: 10px;
+	padding-left: 20px;
+	width: 200px;
+	border-top: 1px dotted #76623c;
+	border-left: 1px dotted;
+	font-family: Tahoma, "Trebuchet MS", sans-serif;
+	font-size: 0.9em;
+	line-height: 1.4em;
+}
+
+div#quoteToday h4 {
+	margin: 0px auto;    /* center this element */
+	text-align: center;  /* center in older versions of IE */
+	font-family: "Tekton Pro", Arial, sans-serif;
+	font-size: 1.4em;
+	font-weight: 600;
+	line-height: 1.8em;
+}
+
+/* this div will set up the background image and height of the footer area
+   clearing it to the right */
+div#footerWrap {
+	height: 50px;
+	background: #000 url(../images/bGrounds/footerBground.jpg) repeat-y 50% 0%;
+	clear: right;
+}
+
+footer {
+	position: relative;
+	width: 948px;
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-bottom: 2em;
+	color: #999;
+	overflow: auto;  /* use scrollbars if necessary */
+	background: url(../images/bottomShadow.png) no-repeat;
+}
+
+footer li {
+	display: inline;  /* display list-items horizontally rather than vertically */
+}
+
+footer address {
+	float: right;
+	text-align: right;
+	padding-right: 15px;
+	
+}
+
+footer a {
+	color: #999;
+}
+
+footer a:hover {
+	color: #dbdddf;
+}
+
+
+
+
+
+
+
+
+
+
+

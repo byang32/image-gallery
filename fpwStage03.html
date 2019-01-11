@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Stage03 - 1870 - The Franco-Prussian War</title>
+	<meta charset="utf-8">
+	
+	<link href="css/1870primary.css" rel="stylesheet">
+	
+	<link href="http://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Nosifer+Caps' rel='stylesheet' type='text/css'>
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+		</script>
+	<![endif]-->
+	
+</head>
+
+<body>
+
+<div id="wrapper">
+
+
+	<div id="loginForm_wrap">
+	
+		<div id="loginForm">
+		
+			<form id="members_login">
+			
+				<h3 id="member">Member Login</h3>
+				<p>
+					<input type="text" name="userName" id="userName" value="username" />
+					<input type="password" name="passWord" id="passWord" value="password" />
+					<input type="submit" class="goButton" name="tutorialSubmit" value="Go!" />
+				</p>
+			
+			</form>
+			
+			<form id="newsletter_login">
+			
+				<h3 id="newsletter">1870 Newsletters</h3>
+				<p>
+					<input type="text" name="userName2" id="userName2" value="username" />
+					<input type="password" name="passWord2" id="passWord2" value="password" />
+					<input type="submit" class="goButton" name="newsletterSubmit" value="Go!" />
+				</p>
+			
+			</form>
+		
+		</div>
+	
+	</div>
+	
+	
+	<div id="loginTab">
+	
+		<p><a id="loginHook" href="#">Client Login</a></p>
+		
+	
+	</div>
+
+
+
+
+	<div id="top">
+	
+		<!--
+		  <hgroup> allows the following <img> and <div> tags to be treated
+		  as a group rather then separate levels within the header section
+		-->
+		<hgroup>
+			<div id="logoPic">
+				<img id="zimmerArtillery" src="images/PrussianGuns.jpg" alt="Prussian Artillery - 1870">
+			</div> <!-- end logoPic div -->
+			
+			<img id="logo1870" src="images/logo.png" alt="1870 Logo">
+			
+			<img id="diary" src="images/Diary01_with_tapedPic.png" alt="Diary with taped pictures">
+		</hgroup>
+	
+	</div>
+	
+	<!--
+		Map the desired layout on the whiteboard together to come up with elements
+		needed (<div>'s, etc...)
+	-->
+	
+	<div id="twoColWrapper">   <!-- wraps both columns of content area -->
+	
+		<div id="secondaryContainer">
+		
+			<img id="journal" src="images/Journal01.png" alt="1870 - The Journal">
+			
+			<img id="whoAmI" src="images/mysteryLeader/silhouetteRoon_small.png" alt="Who am I silhouette?">
+			
+			<p id="whoAmIText">Who Am I?</p>
+			
+			<div id="mysteryPanel">
+				
+				<div id="silhouetteImage">
+				
+					<img src="images/mysteryLeader/macmahon.png" id="revealed" alt="Mystery Leader revealed image">
+				
+					<img src="images/mysteryLeader/silhouetteMacMahon.png" id="silhouette" alt="Mystery Leader silhouette image">
+					
+				</div>
+				
+				<p>My magnificent corps is the 1<sup>st</sup> of the armee!</p>
+				
+				<br>
+				
+				<p>My soldiers and I defended the position magnifique at Froeschwiller against the invaders on 6 August, 1870.</p>
+				
+				<br>
+				
+				<p>Alas, even though my boys fought like heroes they were finally overwhelmed and nearly destroyed when the requested reinforcements did not arrive on time as ordered.</p>
+				
+
+				
+				<h3>Who am I ?</h3>
+				
+			</div>
+		
+		</div>  <!-- end secondaryContainer div -->
+		
+		
+		<div id="contentWrapper">   <!-- wraps main content in folder image area -->
+		
+			<nav>
+			
+				<ul id="nav">
+					
+					<li id="first"><a id="theWar" href="theWar.html">The War</a></li>
+					<li><a id="theDepot" href="theDepot.html">The Depot</a></li>
+					<li><a id="gaming1870" href="gaming1870.html">Gaming 1870</a></li>
+					<li><a id="theArt" href="theArt.html">The Art</a></li>
+					<li><a id="theLibrary" href="theLibrary.html">The Library</a></li>
+				
+				</ul>
+			
+			</nav>
+			
+			<!-- will contain navigation tab descriptions and related polaroid pics 
+			     as well as primary content below that (soldier pic, "Why 1870",
+				 and "Today's Snapshot" content -->
+			<div id="primaryContainer">
+				
+				<div id="navDesc">  <!-- will contain both tab note and polaroid -->
+					
+					<!-- now set up an individual tab description and polaroid
+					     in this case our default -- we will add others in the future -->
+					<div id="defaultTab" class="tabDesc">
+						
+						<img class="navPolaroid" src="images/navPhotos/default_polaroidSmall.png" alt="Default 1870 Polaroid">
+						
+						<h3>The Franco-Prussian War</h3>
+						<p>1870 was a disaster for France causing that nation to thirst for a chance to avenge their territorial losses.  On the other side of the hill the war led to the establishment of a united German empire headed by Prussia.
+						</p>
+					</div> <!-- end defaultTab div -->
+					
+						<div id="theWarTab" class="tabDesc">
+						
+							<img class="navPolaroid" src="images/navPhotos/theWar_polaroidSmall.png" alt="The War Polaroid" />
+						
+							<h3>The War</h3>
+							<p>Waged between the Germans and the French, the war of 1870 would determine the dominant military power in continental Europe into the 20th Century.
+							</p>
+						</div> <!-- end theWarTab div -->
+						
+						<div id="theDepotTab" class="tabDesc">
+						
+							<img class="navPolaroid" src="images/navPhotos/theDepot_polaroidSmall.png" alt="The Depot Polaroid" />
+						
+							<h3>The Depot</h3>
+							<p>1870 would see the development of weapons which would transform the practice of warfare although not all learned its lessons, to their great harm.
+							</p>
+						</div> <!-- end thDepotTab div -->
+						
+						<div id="gaming1870Tab" class="tabDesc">
+						
+							<img class="navPolaroid" src="images/navPhotos/gaming1870_polaroidSmall.png" alt="Gaming 1870 Polaroid" />
+						
+							<h3>Gaming 1870</h3>
+							<p>Because of the large battles, colorful uniforms, and varied types of units, this war is also studied and refought in miniature on hobby wargame tables around the world.
+							</p>
+						</div> <!-- end gaming1870Tab div -->
+						
+						<div id="theArtTab" class="tabDesc">
+						
+							<img class="navPolaroid" src="images/navPhotos/theArt_polaroidSmall.png" alt="The Art of 1870 Polaroid" />
+						
+							<h3>The Art</h3>
+							<p>This war was richly documented via the brush, the camera, and the pen.
+							</p>
+						</div> <!-- end theArtTab div -->
+						
+						<div id="theLibraryTab" class="tabDesc">
+						
+							<img class="navPolaroid" src="images/navPhotos/theLibrary_polaroidSmall.png" alt="The Library Polaroid" />
+						
+							<h3>The Library</h3>
+							<p>It was intensely studied by militaries around the world to prepare for the next conflict and intensely documented.
+							</p>
+						</div> <!-- end theLibraryTab div -->
+					
+				</div> <!-- end navDesc div -->
+				
+				
+				<div id="primaryContent">
+				
+					<div id="primaryPic">
+						<img src="images/pics/primaryPic.png" id="pic" alt="Primary Content Picture">
+						
+						<div id="imageTabs">
+							<img src="images/pics/imageTab01.png" id="imageTab01" alt="imageTab01" longdesc="images/pics/bavLine.png"><br>
+							<img src="images/pics/imageTab02.png" id="imageTab02" alt="imageTab02" longdesc="images/pics/frenchBugler.png"><br>
+							<img src="images/pics/imageTab03.png" id="imageTab03" alt="imageTab03" longdesc="images/pics/Gendarme_a_Cheval_1870.png"><br>
+							<img src="images/pics/imageTab04.png" id="imageTab04" alt="imageTab04" longdesc="images/pics/primaryPic.png">
+						</div>
+					</div> <!-- end primaryPic div -->
+					
+					<div id="motd">
+						<h4>Why 1870?</h4>
+						
+						<p>Large, colorfully uniformed armies with diverse types of units.<br /><br />
+						Large-scale battles, many of which were very close-run affairs with lots of "what if" scenarios.<br /><br />
+						The fall of one empire.  The rise of another.<br /><br />
+						Seeds sown of a future, yet more terrible war...</p>
+					</div> <!-- end motd div -->
+					
+					<div id="quoteToday">
+						<h4>Today's &nbsp;Snapshot</h4>
+						<p>"General Frossard, undefeated, thought he had been defeated, and so he was.<br /><br /> General von Zastrow was half-defeated, but refused to be so was not.<br /><br /> This was the secret of the Prussian victory." <br /><br />- French historian</p>
+					</div> <!-- end quoteToday div -->
+			
+				</div> <!-- end primaryContent div -->
+				
+				
+				<!--<img id="primaryBG" src="images/bGrounds/primary_backGround.jpg" alt="Primary Content" />-->
+		
+			</div>  <!-- end primaryContainer div -->
+			
+		</div>  <!-- end contentWrapper div -->
+	
+	</div>  <!-- end twoColWrapper div -->
+	
+	<!-- div#footerWrap will contain the bottom background bar image -->
+	<div id="footerWrap">
+	
+		<footer>
+			<address>
+				<a href="mailto:jkcooley@sbcglobal.net">Send a dispatch</a>
+			</address>
+	
+			<nav>
+				<ul>
+					<li><a href="index.html">1870 Home</a> &nbsp;|&nbsp; </li>
+					<li><a href="theWar.html">The War</a> &nbsp;|&nbsp; </li>
+					<li><a href="theDepot.html">The Depot</a> &nbsp;|&nbsp; </li>
+					<li><a href="gaming1870.html">Gaming 1870</a> &nbsp;|&nbsp; </li>
+					<li><a href="theArt.html">Art</a> &nbsp;|&nbsp; </li>
+					<li><a href="theLibrary.html">Library</a></li>
+				</ul>
+			</nav>
+			
+			<p>&copy; 2011 Jon Cooley. All rights reserved.</p>
+		</footer>
+		
+	</div> <!-- end footerWrap div -->
+
+</div>  <!-- end div#wrapper -->
+
+<!-- Import jQuery core library -->
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery2DTransform-0.9.3.js"></script>
+<!-- our jQuery files -->
+<script src="js/fadePic.js"></script>
+<script src="js/misc.js"></script>
+<script src="js/clientLogin.js"></script>
+<script src="js/navPanel.js"></script>
+<script src="js/whoAmI.js"></script>
+<script src="js/core.js"></script>
+<script src="js/imagePicker.js"></script>
+<script src="js/whoAmI_beeyang.js"></script>
+
+<!--
+****************************************************************
+
+Concepts we covered in this section:
+
+	Semantic HTML cont. - using the right tags to describe the content
+	of the document (eg header, nav, article, section, ul, dl, footer, div)
+	
+	External Stylesheets (.css)
+	
+	Page layout using CSS positioning
+
+	
+Tags we covered in this section:
+
+	<link>
+	
+	
+Style properties covered in this section:
+
+	clear, float, padding (again), position, text-align, line-height,
+	z-index, top, left, width, height, and lots more practice with previously 
+	learned properties
+
+	
+To the next stage where we add two more pages (one with a table)
+
+In the next stage (Stage04), we'll:
+
+	o create a subpage called theWar.html
+	o create a subpage containing a table
+	o use external stylesheets here as well
+	
+	Specifically:
+	o 
+
+****************************************************************
+-->
+
+</body>
+</html>
